@@ -60,4 +60,4 @@ On first run, an HOD account is auto-created. Follow the on-screen prompts to se
 
 ## License
 
-MIT
+[MIT](LICENSE)
