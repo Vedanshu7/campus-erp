@@ -8,7 +8,7 @@ if(NOT WIN32)
 endif()
 
 add_executable(campus-erp
-    src/Project.cpp
+    src/main.cpp
     src/utils.cpp
     src/records.cpp
     src/menus.cpp
