@@ -3,11 +3,15 @@ project(campus-erp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# On Windows, link against necessary libs
-if(WIN32)
-    add_executable(campus-erp src/Project.cpp)
-else()
-    # Non-Windows: exclude windows.h / conio.h usage — see IMPROVEMENTS.md
-    message(WARNING "This project uses Windows-specific headers. See IMPROVEMENTS.md for cross-platform roadmap.")
-    add_executable(campus-erp src/Project.cpp)
+if(NOT WIN32)
+    message(WARNING "This project uses Windows-specific headers (windows.h). Build on Windows only.")
 endif()
+
+add_executable(campus-erp
+    src/Project.cpp
+    src/utils.cpp
+    src/records.cpp
+    src/menus.cpp
+)
+
+target_include_directories(campus-erp PRIVATE src)
