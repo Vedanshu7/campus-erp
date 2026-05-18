@@ -1,0 +1,7 @@
+*.exe
+*.o
+*.out
+Username.txt
+Studentdata.txt
+build/
+.vscode/
