@@ -58,10 +58,6 @@ cmake --build .
 
 On first run, an HOD account is auto-created. Follow the on-screen prompts to set credentials.
 
-## Improvement Roadmap
-
-See [IMPROVEMENTS.md](IMPROVEMENTS.md)
-
 ## License
 
 MIT
